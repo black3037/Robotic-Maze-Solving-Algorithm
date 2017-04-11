@@ -29,11 +29,6 @@ enum maze_mode_t
 float determine_line_pos(uint8_t qtr_state, float last_line_pos, uint8_t num_qtr_on);
 
 // Global Tuning
-// ORIGIAL PID CONTROLLER (NOMINAL SPEED 0.25f)
-//                                 kp       ki      kd
-//PidController track_maze_line_pid(5.0,    6.0,    0,    -0.3,    0.3,    -4,     4);
-
-// NEW PID CONTROLLER
 PidController track_maze_line_pid(5.0,    6.0,    0,    -0.3,    0.3,    -4,     4);
 
 // Global Variables
